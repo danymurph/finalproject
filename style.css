@@ -1,0 +1,193 @@
+/* Import Manrope Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+/* Import Font Awesome for Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Base Styles */
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(62,225,28,1) 48%, rgba(36,187,43,1) 100%);
+    color: #333333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 30px 20px;
+    max-width: 1200px; /* Expanded container width */
+    margin: 0 auto;
+}
+
+/* Search Section */
+#search-section {
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+#search-input {
+    width: 80%; /* Expanded width */
+    max-width: 800px; /* Increased max width */
+    padding: 15px 20px;
+    font-size: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 30px;
+    color: #333333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    flex: 1;
+    margin-right: 15px;
+}
+
+#search-input:focus {
+    border-color: #66BB6A;
+    outline: none;
+    box-shadow: 0 0 10px rgba(102, 187, 106, 0.5);
+}
+
+#search-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#search-button:hover, #search-button:focus {
+    background-color: #66BB6A;
+    transform: translateY(-2px);
+    outline: none;
+}
+
+/* Suggestions Dropdown */
+#suggestions-box {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Expanded width */
+    max-width: 800px; /* Increased max width */
+    background: #FFFFFF;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Results Section */
+#results-section {
+    margin-top: 50px;
+}
+
+#results-section h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #2E7D32;
+    margin-bottom: 30px;
+}
+
+#results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#results-container li {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4CAF50;
+    flex: 1 1 45%; /* Expanded results to take up more space */
+    max-width: 500px; /* Adjust max width */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#results-container li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#results-container li strong {
+    font-size: 1.4em;
+    color: #2E7D32;
+    margin-bottom: 10px;
+}
+
+#results-container li p {
+    color: #555555;
+}
+
+.details-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.details-button:hover {
+    background: #66BB6A;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #2E7D32;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}

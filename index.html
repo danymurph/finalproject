@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Escherichia coli K-12 MG1655 Pathways</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Escherichia coli K-12 MG1655 Pathways</h1>
+    </header>
+    <main>
+        <section id="search-section" aria-labelledby="search-heading">
+            <h2 id="search-heading" class="visually-hidden">Search Pathways</h2>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="🔍 Search pathways by keyword" autocomplete="off" aria-label="Search pathways by keyword" />
+                <button id="search-button" aria-label="Search"><i class="fas fa-search"></i> Search</button>
+            </div>
+            <div id="suggestions-box" aria-label="Search suggestions" role="listbox"></div>
+        </section>
+        <section id="results-section" aria-labelledby="results-heading">
+            <h2 id="results-heading">Search Results</h2>
+            <div id="results-container" aria-live="polite"></div>
+        </section>
+        <section id="details-section" aria-labelledby="details-heading" style="display:none;">
+            <h2 id="details-heading">Pathway Details</h2>
+            <div id="details-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Danyael Murphy. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
